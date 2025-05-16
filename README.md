@@ -108,8 +108,8 @@ npm run dev
 ## 📡 API Endpoints
 
 - `GET /api/apps/search`: Search for apps by keyword or category
-- `POST /api/apps/insights`: Fetch AI insights about app
-- `POST /api/apps/datasafety`: Retrieve data safety info
+- `POST /api/apps/insights`: Send app info and fetches AI insights about app
+- `POST /api/apps/datasafety`: Send array of app IDs and retrieve data safety info of apps
 
 ---
 
