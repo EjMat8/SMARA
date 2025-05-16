@@ -72,7 +72,6 @@ export default function Search() {
     if (appRes && appRes.length > 0) {
       const promise = fetchDataSafety(appRes.map((app) => app.appId));
 
-      // Use toaster.promise to handle the promise state
       toaster.promise(promise, {
         loading: {
           title: "Fetching Data Safety...",

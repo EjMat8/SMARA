@@ -18,20 +18,16 @@ import { SpinnerDotted } from "spinners-react";
 function generateDataCollectionSummary(data) {
   const { collectedData: dataCollected } = data;
 
-  // Total number of data types collected
   const totalDataTypes = dataCollected.length;
 
-  // Count of required data types
   const requiredDataTypes = dataCollected.filter(
     (item) => !item.optional
   ).length;
 
-  // Extract unique sensitive data types (e.g., "Personal info", "Financial info")
   const sensitiveDataTypes = [
     ...new Set(dataCollected.map((item) => item.type.toUpperCase())),
   ];
 
-  // Generate the summary
   return `This app collects ${totalDataTypes} types of data, of which ${requiredDataTypes} are required. Data types collected are ${sensitiveDataTypes.join(
     " and "
   )}.`;
