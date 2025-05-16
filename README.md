@@ -95,6 +95,11 @@ npm run dev
 - `POST /api/apps/insights`: Send app info and fetches AI insights about app
 - `POST /api/apps/datasafety`: Send array of app IDs and retrieve data safety info of apps
 
+### Note on how I fetch these apps and their details:
+
+- I fetch the apps and the permissions (fetching apps, full details of app, and permissions are separate requests) in one request so may take a while if the limiter is set to a higher number. I did some throttling too to avoid any API-Rate limit requests. (I know I will work on optimizing it more)
+- After apps have been fetched, I fetch the data safety of each app in the background.
+
 ---
 
 ## Notes

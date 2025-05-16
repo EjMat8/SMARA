@@ -4,7 +4,7 @@ import pThrottle from "p-throttle";
 const mem = gplay.memoized();
 const throttle = pThrottle({
   limit: 10,
-  interval: 900,
+  interval: 750,
 });
 
 const fetchPermissions = throttle(async (appId) => {
@@ -32,14 +32,14 @@ const fetchApps = async ({
           term,
           num: limit,
           fullDetail: true,
-          throttle: 10,
+          throttle: 15,
         })
       : await mem.list({
           category,
           collection,
           num: limit,
           fullDetail: true,
-          throttle: 10,
+          throttle: 15,
         });
 
   // Filter apps based on rating and installs BEFORE fetching permissions
