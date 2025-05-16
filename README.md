@@ -7,8 +7,8 @@ Smara is a web application designed to help users search, analyze, and export ap
 ## 🚀 Features
 
 - **Search Apps**: Search for apps using keywords or categories.
-- **App Insights**: Fetch detailed app information including version, release date, content rating, and more.
-- **Data Safety**: Retrieve data safety information for apps.
+- **App Insights**: Simple AI analysis and summary of the app with a little bit of focus on data safety/privacy.
+- **Data Safety**: Retrieve permissions and data safety information for apps.
 - **Export Data**: Export app data in CSV or JSON format for further analysis.
 
 ---
