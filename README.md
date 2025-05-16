@@ -89,22 +89,6 @@ npm run dev
 
 ---
 
-## 🗂 Project Structure
-
-### Frontend (`client`)
-
-- **Components**: Reusable UI components (`Search`, `Export`, `AppOverview`)
-- **Pages**: Next.js pages for routing
-- **Utils**: Helper functions and constants
-
-### Backend (`backend`)
-
-- **Routes**: API endpoints for fetching app data
-- **Services**: Logic for interacting with external APIs
-- **Middleware**: Error handling and CORS setup
-
----
-
 ## 📡 API Endpoints
 
 - `GET /api/apps/search`: Search for apps by keyword or category
